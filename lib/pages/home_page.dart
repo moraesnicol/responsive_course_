@@ -1,35 +1,18 @@
-
-
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  HomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-   
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Olá"),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'olá',
-            ),
-          ],
+    // ignore: missing_return
+    return LayoutBuilder(builder: (context, constraints) {
+      
+      return Scaffold(
+        appBar: AppBar(
+          backgroundColor: constraints.maxWidth >= 800 ? Colors.redAccent : Colors.blue,
+
         ),
-      ),
-    );
-  }
+      );
+    }
+   );
+  } 
 }
