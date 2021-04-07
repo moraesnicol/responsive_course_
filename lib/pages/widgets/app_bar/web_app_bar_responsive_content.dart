@@ -51,14 +51,14 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 style: TextButton.styleFrom(
                   primary: Colors.white,
                 ),
-                child: Text('Udemy for Bussines')),
+                child: Text('Fludemy for Bussines')),
             if (constraints.maxWidth >= 500) const SizedBox(width: 15),
             TextButton(
                 onPressed: () {},
                 style: TextButton.styleFrom(
                   primary: Colors.white,
                 ),
-                child: Text('Ensine na Udemy')),
+                child: Text('Ensine na Fludemy')),
           ],
         );
       },

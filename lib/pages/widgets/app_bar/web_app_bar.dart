@@ -10,7 +10,7 @@ class WebAppBar extends StatelessWidget {
       toolbarHeight: 70,
       title: Row(
         children: [
-          Text('Udemy',
+          Text('Fludemy',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
           const SizedBox(width: 32),
           Text(
