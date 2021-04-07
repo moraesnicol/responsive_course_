@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'web_app_bar_responsive_content.dart';
+
 class WebAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -15,17 +17,9 @@ class WebAppBar extends StatelessWidget {
             'Categorias',
             style: TextStyle(fontSize: 14),
           ),
-          Expanded(child: Container()),
           const SizedBox(width: 32),
-          Text(
-            'Udemy for Bussines',
-            style: TextStyle(fontSize: 14),
-          ),
-          const SizedBox(width: 32),
-          Text(
-            'Ensine na Udemy',
-            style: TextStyle(fontSize: 14),
-          ),
+          WebAppBarResponsiveContent(), //searchbar
+
           const SizedBox(width: 28),
           IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart)),
           const SizedBox(width: 24),
@@ -56,7 +50,8 @@ class WebAppBar extends StatelessWidget {
                     TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
               ),
               style: ElevatedButton.styleFrom(
-                  primary: Colors.white, padding: EdgeInsets.all(10)),
+                  primary: Colors.lightGreenAccent[400],
+                  padding: EdgeInsets.all(10)),
             ),
           )
         ],
