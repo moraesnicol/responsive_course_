@@ -2,8 +2,9 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:reponsive_course/breakpoints.dart';
-import 'package:reponsive_course/pages/widgets/app_bar/mobile_app_bar.dart';
-import 'package:reponsive_course/pages/widgets/app_bar/web_app_bar.dart';
+import 'package:reponsive_course/widgets/app_bar/mobile_app_bar.dart';
+import 'package:reponsive_course/widgets/app_bar/web_app_bar.dart';
+import 'package:reponsive_course/widgets/sections/top_section.dart';
 
 class HomePage extends StatelessWidget {
   @override
