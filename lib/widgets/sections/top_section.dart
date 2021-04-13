@@ -52,6 +52,7 @@ class TopSection extends StatelessWidget {
                         ),
                       )),
                 ),
+                
               ],
             ),
           );
@@ -105,7 +106,39 @@ class TopSection extends StatelessWidget {
           );
         }
 
-        return Container();
+        return Column(
+          children: [
+            AspectRatio(
+              aspectRatio: 3.5,
+              child: Image.asset(
+                'assets/coverfluemy.jpg',
+                fit: BoxFit.cover,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Aprenda Flutter no seu tempo',
+                    style: TextStyle(
+                        fontSize: 35,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Estude qualquer tema, a qualquer hora. Explore milhares de cursos.',
+                    style: TextStyle(fontSize: 15, color: Colors.white),
+                  ),
+                  const SizedBox(height: 8),
+                  CustomSearchField(),
+                ],
+              ),
+            ),
+          ],
+        );
       },
     );
   }
