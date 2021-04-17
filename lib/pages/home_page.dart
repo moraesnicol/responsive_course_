@@ -1,4 +1,3 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:reponsive_course/breakpoints.dart';
@@ -29,6 +28,7 @@ class HomePage extends StatelessWidget {
               child: ListView(children: [
                 TopSection(),
                 AdvantagesSection(),
+                CoursesSection(),
 
               ]),
             ),

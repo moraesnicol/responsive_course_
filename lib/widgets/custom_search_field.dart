@@ -17,7 +17,8 @@ class CustomSearchField extends StatelessWidget {
             onPressed: () {},
             icon: Icon(Icons.search),
             color: Colors.white,
-          )),
+          )
+          ),
     );
   }
 }
