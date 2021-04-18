@@ -5,9 +5,7 @@ class MobileAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.black,
-      title: Text(
-        'Flut-Flut'
-      ),
+      title: Text('Fludemy'),
       actions: [
         IconButton(icon: Icon(Icons.search), onPressed: () {}),
         IconButton(icon: Icon(Icons.shopping_cart), onPressed: () {})

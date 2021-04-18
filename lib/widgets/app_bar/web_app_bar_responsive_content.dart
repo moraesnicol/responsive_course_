@@ -25,7 +25,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 child: Row(
                   children: [
                     const SizedBox(
-                      width: 5,
+                      width: 4,
                     ),
                     IconButton(
                       onPressed: () {},
@@ -45,20 +45,24 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 ),
               ),
             ),
-            if (constraints.maxWidth >= 400) const SizedBox(width: 32),
-            TextButton(
-                onPressed: () {},
-                style: TextButton.styleFrom(
-                  primary: Colors.white,
-                ),
-                child: Text('Fludemy for Bussines')),
-            if (constraints.maxWidth >= 500) const SizedBox(width: 15),
-            TextButton(
-                onPressed: () {},
-                style: TextButton.styleFrom(
-                  primary: Colors.white,
-                ),
-                child: Text('Ensine na Fludemy')),
+            if (constraints.maxWidth >= 400) ...[
+              const SizedBox(width: 32),
+              TextButton(
+                  onPressed: () {},
+                  style: TextButton.styleFrom(
+                    primary: Colors.white,
+                  ),
+                  child: Text('Fludemy for Bussines')),
+            ],
+            if (constraints.maxWidth >= 500) ...[
+              const SizedBox(width: 8),
+              TextButton(
+                  onPressed: () {},
+                  style: TextButton.styleFrom(
+                    primary: Colors.white,
+                  ),
+                  child: Text('Ensine na Fludemy')),
+            ]
           ],
         );
       },

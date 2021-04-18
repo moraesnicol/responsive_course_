@@ -46,13 +46,12 @@ class TopSection extends StatelessWidget {
                               style:
                                   TextStyle(fontSize: 18, color: Colors.white),
                             ),
-                            const SizedBox(height: 8),
+                            const SizedBox(height: 16),
                             CustomSearchField(),
                           ],
                         ),
                       )),
                 ),
-                
               ],
             ),
           );
@@ -95,7 +94,7 @@ class TopSection extends StatelessWidget {
                               style:
                                   TextStyle(fontSize: 15, color: Colors.white),
                             ),
-                            const SizedBox(height: 8),
+                            const SizedBox(height: 16),
                             CustomSearchField(),
                           ],
                         ),
@@ -132,7 +131,7 @@ class TopSection extends StatelessWidget {
                     'Estude qualquer tema, a qualquer hora. Explore milhares de cursos.',
                     style: TextStyle(fontSize: 15, color: Colors.white),
                   ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 16),
                   CustomSearchField(),
                 ],
               ),

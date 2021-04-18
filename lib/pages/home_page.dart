@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
                   preferredSize: Size(double.infinity, 56),
                 )
               : PreferredSize(
-                  child: WebAppBar(), preferredSize: Size(double.infinity, 70)),
+                  child: WebAppBar(), preferredSize: Size(double.infinity, 72)),
           drawer: constraints.maxWidth < mobileBreakpoint ? Drawer() : null,
           body: Align(
             alignment: Alignment.topCenter,
